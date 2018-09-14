@@ -70,6 +70,8 @@ const styles = StyleSheet.create({
       fontSize: 50,
   },
   tran : {
+  	flex: 0,
     fontSize: 40,
+    flexDirection: "flex-start",
   }
 });
