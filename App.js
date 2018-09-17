@@ -57,7 +57,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
       fontSize: 50,
   },
   tran : {
-  	flex: 0,
+  	flex: 1,
     fontSize: 40,
     flexDirection: "flex-start",
   }
