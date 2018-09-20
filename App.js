@@ -57,9 +57,8 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+	flex: 1,
+	  padding:24,
   },
   header: {
     padding: Constants.statusBarHeight,
