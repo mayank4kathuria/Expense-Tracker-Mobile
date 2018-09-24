@@ -44,7 +44,7 @@ export default class App extends React.Component {
         <Text style = {[styles.header]}>Expense Tracker</Text>
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
         <Button title="Add Expense" onPress = {this.addExpense} />
-        <Text style = {styles.tran}>Transactions</Text>
+        <Text style = {styles.title}>Transactions</Text>
         <ScrollView style = {[styles.tran, {backgroundColor: "red"} ]}>
         	{this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )}
       	</ScrollView>
@@ -70,6 +70,5 @@ const styles = StyleSheet.create({
   tran : {
   	flex: 1,
     fontSize: 40,
-    flexDirection: "flex-start",
   }
 });
