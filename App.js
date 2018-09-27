@@ -5,10 +5,15 @@ import AddExpense from './addExpense'
 
 
 
-function Transaction(props){
+function Transaction(props) {
+	const {id, transact: {debit, date}} = props;
+	let newDate = date.toString();
+	newDate = newDate.slice(0,-15);
+
 	return (
 		<View>
-			<Text>{props.id + ")"} Amount: Rs { props.transact} </Text>
+			<Text>{id + ")"} Amount: Rs {debit}  </Text>
+			<Text> -- {newDate} </Text>
 		</View>	
 		)
 }
@@ -32,6 +37,9 @@ export default class App extends React.Component {
 	}
 
 	addExpense(){
+
+		const d = new Date();
+
 		const debit = 10;
 		if(this.state.cash == 0 ){
 			this.setState({
@@ -41,7 +49,7 @@ export default class App extends React.Component {
 		else {
 		this.setState( state => ({
 			cash: state.cash - debit,
-			transaction: [...state.transaction, debit],
+			transaction: [...state.transaction, {debit, date: d }],
 		}) )
 	}
 }	
@@ -54,7 +62,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style = {[styles.header]}>Expense Tracker</Text>
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
-        <Button title="Add Expense" onPress = {this.toggleForm} />
+        <Button title="Add Expense" onPress = {this.addExpense} />
         <Text style = {styles.title}>Transactions</Text>
         <ScrollView style = {[styles.tran, {backgroundColor: "red"} ]}>
         	{this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )}
