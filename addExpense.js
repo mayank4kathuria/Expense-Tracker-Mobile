@@ -11,14 +11,26 @@ export default class AddExpense extends React.Component {
 			amount: '',
 		}
 	}
+	
+	handleExpense = (amount) => {
+		this.setState({amount});
+	}	
+
+	handleSubmit = () => {
+
+		this.props.onSubmit(this.state.amount);
 		
+	}
 
 	render() {
 		return (
 			<View>
 				<Text style = {styles.header}>Add Expense</Text>
-				<TextInput style ={ styles.input } value="" />
-				<Button title="Add Expense" onpress=""/>
+				<TextInput style ={ styles.input } 
+				value={this.state.amount}
+				keyboardType="numeric"
+				onChangeText = {this.handleExpense}/>
+				<Button title="Add Expense" onPress={this.handleSubmit}/>
 			</View>
 
 			)

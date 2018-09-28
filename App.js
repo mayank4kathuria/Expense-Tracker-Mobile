@@ -36,33 +36,36 @@ export default class App extends React.Component {
 		})
 	}
 
-	addExpense(){
+	addExpense(debit){
 
 		const d = new Date();
 
-		const debit = 10;
 		if(this.state.cash == 0 ){
 			this.setState({
 			cash: 0,
 		}) 
 		} 
 		else {
-		this.setState( state => ({
-			cash: state.cash - debit,
-			transaction: [...state.transaction, {debit, date: d }],
+
+		this.setState( prevState => ({
+			cash: prevState.cash - debit,
+			transaction: [...prevState.transaction, {debit, date: d }],
+			
 		}) )
+			
+			this.toggleForm();
 	}
 }	
 
   render() {
 
-  	if (this.state.showAddExpenseForm) return <AddExpense />
+  	if (this.state.showAddExpenseForm) return <AddExpense onSubmit={this.addExpense} />
 
     return (
       <View style={styles.container}>
         <Text style = {[styles.header]}>Expense Tracker</Text>
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
-        <Button title="Add Expense" onPress = {this.addExpense} />
+        <Button title="Add Expense" onPress = {this.toggleForm} />
         <Text style = {styles.title}>Transactions</Text>
         <ScrollView style = {[styles.tran, {backgroundColor: "red"} ]}>
         	{this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )}
