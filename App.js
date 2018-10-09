@@ -6,18 +6,18 @@ import AddExpense from './addExpense'
 
 
 function Transaction(props) {
-	const {id, transact: {debit, date}} = props;
+	const {id, transact: {amount, date, entry}} = props;
 	let newDate = date.toString();
 	newDate = newDate.slice(0,-15);
 
 	return (
 		<View>
-			<Text>{id + ")"} Amount: Rs {debit}  </Text>
+			<Text>{id + ")"} Amount: Rs {amount} is {entry}ed on </Text>
 			<Text> -- {newDate} </Text>
 		</View>	
 		)
 }
-
+//
 export default class App extends React.Component {
 	constructor(){
 		super();
@@ -36,7 +36,7 @@ export default class App extends React.Component {
 		})
 	}
 
-	addExpense(debit){
+	addExpense(amount){
 
 		const d = new Date();
 
@@ -47,11 +47,13 @@ export default class App extends React.Component {
 		} 
 		else {
 
-		this.setState( prevState => ({
-			cash: prevState.cash - debit,
-			transaction: [...prevState.transaction, {debit, date: d }],
+			const e = (amount >= 0) ? "Debit" : "Credit";
 			
-		}) )
+			this.setState( prevState => ({
+				cash: prevState.cash - amount,
+				transaction: [...prevState.transaction, {amount: Math.abs(amount), date: d, entry: e }],
+			
+			}) )
 			
 			this.toggleForm();
 	}
@@ -67,14 +69,13 @@ export default class App extends React.Component {
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
         <Button title="Add Expense" onPress = {this.toggleForm} />
         <Text style = {styles.title}>Transactions</Text>
-        <ScrollView style = {[styles.tran, {backgroundColor: "red"} ]}>
+        <ScrollView style = { {backgroundColor: "red"}}>
         	{this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )}
       	</ScrollView>
       </View>
     );
   }
 }
-
 
 
 const styles = StyleSheet.create({
