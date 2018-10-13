@@ -12,7 +12,7 @@ function Transaction(props) {
 
 	return (
 		<View>
-			<Text>{id + ")"} Amount: Rs {amount} is {entry}ed on </Text>
+			<Text>{id + ")"} Amount of Rs {amount} is {entry}ed on </Text>
 			<Text> -- {newDate} </Text>
 		</View>	
 		)
