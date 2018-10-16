@@ -30,7 +30,7 @@ export default class AddExpense extends React.Component {
 				value={this.state.amount}
 				keyboardType="numeric"
 				onChangeText = {this.handleExpense}/>
-				<Text style = {{fontSize: 12}}>**Add "-" before amount for credited amount</Text>
+				<Text style = {{fontSize: 12}}>**Add "-" before amount to credit</Text>
 				<Button title="Add Expense" onPress={this.handleSubmit}/>
 			</View>
 
