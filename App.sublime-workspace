@@ -1,1 +1,405 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"handle",
+				"handleExpense"
+			],
+			[
+				"to",
+				"toggleForm"
+			],
+			[
+				"add",
+				"addContact"
+			],
+			[
+				"A",
+				"AddExpense"
+			],
+			[
+				"sty",
+				"StyleSheet"
+			],
+			[
+				"Expense",
+				"AddExpense"
+			],
+			[
+				"hand",
+				"handlePhoneChange"
+			],
+			[
+				"style",
+				"styles"
+			],
+			[
+				"t",
+				"toggleContact"
+			],
+			[
+				"styles",
+				"styles"
+			],
+			[
+				"con",
+				"contactBox"
+			],
+			[
+				"s",
+				"StyleSheet"
+			],
+			[
+				"Add",
+				"AddContact"
+			],
+			[
+				"l",
+				"larr"
+			],
+			[
+				"r",
+				"rarr"
+			],
+			[
+				"merge",
+				"mergeSort"
+			],
+			[
+				"c",
+				"contacts"
+			],
+			[
+				"Arr",
+				"ARR_SIZE"
+			],
+			[
+				"phon",
+				"phoneNumber"
+			],
+			[
+				"ge",
+				"generateName"
+			],
+			[
+				"ra",
+				"rand"
+			],
+			[
+				"co",
+				"const"
+			],
+			[
+				"cons",
+				"contacts"
+			],
+			[
+				"tra",
+				"transaction"
+			],
+			[
+				"ADD",
+				"addExpense"
+			],
+			[
+				"tran",
+				"transaction"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"st",
+				"state"
+			],
+			[
+				"stye",
+				"styles"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "App.js",
+			"settings":
+			{
+				"buffer_size": 1991,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "addExpense.js",
+			"settings":
+			{
+				"buffer_size": 920,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 165.0,
+		"history":
+		[
+			"console.log(\"Hello world!\")",
+			"open app",
+			"open app.js",
+			"open",
+			"run",
+			"python",
+			"-version",
+			"-v",
+			"--version",
+			"dir",
+			"var name =\"mayank\"",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Mayank/Documents/expensetracker/App.js",
+		"/C/Users/Mayank/Documents/phonebook/mergeSort.js",
+		"/C/Users/Mayank/Documents/phonebook/contacts.js",
+		"/C/Users/Mayank/Documents/phonebook/addContact.js",
+		"/C/Users/Mayank/Documents/expensetracker/addExpense.js",
+		"/C/Users/Mayank/Documents/mobileAppResource/react-native-website-master/docs/textinput.md",
+		"/C/Users/Mayank/Documents/mobileAppResource/lecture4/src4/after/contacts.js",
+		"/C/Users/Mayank/Documents/phonebook/.expo/settings.json",
+		"/C/Users/Mayank/Documents/mobileAppResource/lecture4/src4/after/SectionListContacts.js",
+		"/C/Users/Mayank/Documents/mobileAppResource/lecture4/src4/after/App.js",
+		"/C/Users/Mayank/Documents/mobileAppResource/lecture4/src4/before/App.js",
+		"/C/Users/Mayank/Documents/project1/package.json",
+		"/C/Users/Mayank/Documents/reactexamples/App.js",
+		"/C/Users/Mayank/Documents/project1/App.js",
+		"/C/Users/Mayank/Documents/stopwatch/App.js",
+		"/C/Users/Mayank/Documents/project0/App.js",
+		"/C/Users/Mayank/Documents/gitproj/react/counter.js",
+		"/C/Users/Mayank/Documents/stopwatch/app.json",
+		"/C/Users/Mayank/Downloads/project1/README.md",
+		"/C/Users/Mayank/Documents/stopwatch/package.json",
+		"/C/Users/Mayank/Documents/stopwatch/assets/icon.png",
+		"/C/Users/Mayank/Documents/stopwatch/assets/splash.png",
+		"/C/Users/Mayank/Downloads/Compressed/src3/5-expo-app/App.js",
+		"/G/VASU/Games/Battlefield 4/setup.exe"
+	],
+	"find":
+	{
+		"height": 90.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								941,
+								941
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 567.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "addExpense.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								578,
+								578
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 90.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "App.sublime-project",
+	"replace":
+	{
+		"height": 176.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 171.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

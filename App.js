@@ -1,22 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView , Button } from 'react-native';
-import Constants from "expo"
-import AddExpense from './addExpense'
+import Constants from "expo";
+import AddExpense from './addExpense';
+import Transaction from './transactionRow';
 
 
+// function Transaction(props) {
+// 	const {id, transact: {amount, date, entry}} = props;
+// 	let newDate = date.toString();
+// 	newDate = newDate.slice(0,-15);
 
-function Transaction(props) {
-	const {id, transact: {amount, date, entry}} = props;
-	let newDate = date.toString();
-	newDate = newDate.slice(0,-15);
-
-	return (
-		<View>
-			<Text>{id + ")"} Amount of Rs {amount} is {entry}ed on </Text>
-			<Text> -- {newDate} </Text>
-		</View>	
-		)
-}
+// 	return (
+// 		<View>
+// 			<Text>{id + ")"} Amount of Rs {amount} is {entry}ed on </Text>
+// 			<Text> -- {newDate} </Text>
+// 		</View>	
+// 		)
+// }
 //
 export default class App extends React.Component {
 	constructor(){
@@ -70,7 +70,8 @@ export default class App extends React.Component {
         <Button title="Add Expense" onPress = {this.toggleForm} />
         <Text style = {styles.title}>Transactions</Text>
         <ScrollView style = { {backgroundColor: "red"}}>
-        	{this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )}
+
+        	{ this.state.transaction.length > 0 ? (this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )) : <Text>No Transactions to show</Text> }
       	</ScrollView>
       </View>
     );
