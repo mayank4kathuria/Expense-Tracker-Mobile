@@ -17,10 +17,10 @@ export default function Transaction(props) {
 
 const styles = StyleSheet.create({
 	row: {
-		padding: 10,
+		padding: 20,
 		backgroundColor: "#00eeaa",
 		borderColor: "#fff",
-		borderWidth: 4,
+		borderBottomWidth: 4,
 	}
 },
 );
