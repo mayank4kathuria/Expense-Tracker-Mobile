@@ -5,19 +5,6 @@ import AddExpense from './addExpense';
 import Transaction from './transactionRow';
 
 
-// function Transaction(props) {
-// 	const {id, transact: {amount, date, entry}} = props;
-// 	let newDate = date.toString();
-// 	newDate = newDate.slice(0,-15);
-
-// 	return (
-// 		<View>
-// 			<Text>{id + ")"} Amount of Rs {amount} is {entry}ed on </Text>
-// 			<Text> -- {newDate} </Text>
-// 		</View>	
-// 		)
-// }
-//
 export default class App extends React.Component {
 	constructor(){
 		super();
@@ -67,11 +54,11 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style = {[styles.header]}>Expense Tracker</Text>
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
-        <Button title="Add Expense" onPress = {this.toggleForm} />
+        <Button title="Add Expense" style={styles.btn} onPress = {this.toggleForm} />
         <Text style = {styles.title}>Transactions</Text>
-        <ScrollView style = { {backgroundColor: "red"}}>
+        <ScrollView style = {styles.tran}>
 
-        	{ this.state.transaction.length > 0 ? (this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )) : <Text>No Transactions to show</Text> }
+        	{ this.state.transaction.length > 0 ? (this.state.transaction.map( (val, index) => <Transaction id={index + 1} transact={val} /> )) : <Text style={styles.msg}> No Transactions to show</Text> }
       	</ScrollView>
       </View>
     );
@@ -82,7 +69,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
 	flex: 1,
-	  padding:24,
+	  paddingTop:19,
+	  margin: 5,
   },
   header: {
     padding: Constants.statusBarHeight,
@@ -91,8 +79,16 @@ const styles = StyleSheet.create({
       padding: 0,
       fontSize: 50,
   },
-  tran : {
-  	flex: 1,
-    fontSize: 40,
+  btn: {
+  	borderWidth: 2,
+      borderColor: "#000",
+  },
+  tran:{
+  	margin: 10,
+  	backgroundColor: "red",
+  },
+  msg : {
+    fontSize: 20,
+    padding:"10%",
   }
 });
