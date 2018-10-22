@@ -52,7 +52,7 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Text style = {[styles.header]}>Expense Tracker</Text>
+        <Text style = {styles.header}>Expense Tracker</Text>
         <Text style = {styles.title}> Cash: {this.state.cash} </Text>
         <Button title="Add Expense" style={styles.btn} onPress = {this.toggleForm} />
         <Text style = {styles.title}>Transactions</Text>
@@ -68,12 +68,17 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-	flex: 1,
-	  paddingTop:19,
-	  margin: 5,
+	  flex: 1,
+	  paddingTop:23,
+	  margin: 5, 
   },
   header: {
-    padding: Constants.statusBarHeight,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: "black",
+    backgroundColor: "#eee",
+    margin: -5,
+
   },
   title: {
       padding: 0,
