@@ -69,7 +69,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
 	  flex: 1,
-	  paddingTop:23,
+	  paddingTop:24,
 	  margin: 5, 
   },
   header: {
