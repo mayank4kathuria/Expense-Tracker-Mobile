@@ -26,11 +26,13 @@ export default class AddExpense extends React.Component {
 		return (
 			<View>
 				<Text style = {styles.header}>Add Expense</Text>
+				<Text style = {{margin:10}}></Text>
 				<TextInput style ={ styles.input } 
 				value={this.state.amount}
 				keyboardType="numeric"
 				onChangeText = {this.handleExpense}/>
 				<Text style = {{fontSize: 12}}>**Add "-" before amount to credit</Text>
+				<Text style = {{margin:10}}></Text>
 				<Button title="Add Expense" onPress={this.handleSubmit}/>
 			</View>
 
@@ -46,8 +48,11 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	header: {
+		paddingTop: 27,
 		fontSize: 40,
-		padding: 23,
+		borderWidth: 1,
+		borderColor: 'black',
+		backgroundColor: "#eee",	
 	},
 	input: {
 		padding: 10,
