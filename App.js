@@ -1,9 +1,12 @@
 import React from 'react';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
 import TransactionScreen from './screens/transactionScreen';
+import AddExpenseScreen from './screens/AddExpenseScreen';
+
 
 const MainNavigator = createStackNavigator({
   Transaction: TransactionScreen,
+  AddExpense: AddExpenseScreen,
 },{
   initialRouteName: "Transaction",
 });
@@ -16,9 +19,15 @@ const AppNavigator = createSwitchNavigator({
 
 export default class App extends React.Component {
 
+	state = {
+        showAddExpenseForm: false,
+        cash: 1600,
+  		transaction: []
+  		}
+
   render(){
     return (
-    <AppNavigator />
+    	<AppNavigator screenProps={{ cash: this.state.cash , transaction: this.state.transaction}}/>
 ); 
   }
 
