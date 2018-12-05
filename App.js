@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
 import TransactionScreen from './screens/transactionScreen';
-import AddExpenseScreen from './screens/AddExpenseScreen';
+import AddExpenseScreen from './screens/AddExpenceScreen';
 
 
 const MainNavigator = createStackNavigator({
@@ -22,7 +22,7 @@ export default class App extends React.Component {
 	state = {
         showAddExpenseForm: false,
         cash: 1600,
-  		transaction: []
+  		  transaction: []
   		}
 
   render(){
